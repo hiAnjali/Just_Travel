@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Berkshire Swash", cursive;
+    scrollbar-width: none;
+}
+
+body {
+    background-color: #363636;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #363636;
+    backdrop-filter: blur(10px);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+header .logo span {
+    color: #007BFF;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+}
+nav ul li a:hover {
+    color: #007BFF; 
+}
+
+.hero {
+    height: 90vh;
+    background: url('assets/images/nature2.jpeg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    height: 75%;
+    width: 35%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin: 0 10px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.card h2 {
+    margin: 0;
+}
+
+.cards-slider {
+    position: relative;
+    /* width: 100%; */
+    overflow: hidden;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1000;
+    font-size: 24px;
+    border-radius: 50%;
+}
